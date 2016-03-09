@@ -1,0 +1,89 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 11:55:04  November 04, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CPU_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:55:04  NOVEMBER 04, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE CPU.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_G26 -to clk
+set_location_assignment PIN_AD12 -to output[15]
+set_location_assignment PIN_AE12 -to output[14]
+set_location_assignment PIN_AE13 -to output[13]
+set_location_assignment PIN_AF13 -to output[12]
+set_location_assignment PIN_AE15 -to output[11]
+set_location_assignment PIN_AD15 -to output[10]
+set_location_assignment PIN_AC14 -to output[9]
+set_location_assignment PIN_AA13 -to output[8]
+set_location_assignment PIN_Y13 -to output[7]
+set_location_assignment PIN_AA14 -to output[6]
+set_location_assignment PIN_AC21 -to output[5]
+set_location_assignment PIN_AD21 -to output[4]
+set_location_assignment PIN_AD23 -to output[3]
+set_location_assignment PIN_AD22 -to output[2]
+set_location_assignment PIN_AC22 -to output[1]
+set_location_assignment PIN_AB21 -to output[0]
+set_location_assignment PIN_N23 -to reset
+set_location_assignment PIN_K2 -to lcd_blon
+set_location_assignment PIN_K3 -to lcd_e
+set_location_assignment PIN_L4 -to lcd_on
+set_location_assignment PIN_K1 -to lcd_rs
+set_location_assignment PIN_K4 -to lcd_rw
+set_location_assignment PIN_H3 -to data_bus_7
+set_location_assignment PIN_J1 -to data_bus_0
+set_location_assignment PIN_J2 -to data_bus_1
+set_location_assignment PIN_H1 -to data_bus_2
+set_location_assignment PIN_H2 -to data_bus_3
+set_location_assignment PIN_J4 -to data_bus_4
+set_location_assignment PIN_J3 -to data_bus_5
+set_location_assignment PIN_H4 -to data_bus_6
+set_location_assignment PIN_N2 -to clock_50
+set_location_assignment PIN_W26 -to lcd_forward
+set_global_assignment -name VHDL_FILE LCD.vhd
+set_global_assignment -name VHDL_FILE RegisterFileTypePackage.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
